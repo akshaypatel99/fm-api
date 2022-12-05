@@ -1,0 +1,257 @@
+const products = [
+	{
+		name: 'Apples',
+		image: '/images/apples.jpg',
+		description:
+			'Apples are one of the most widely cultivated tree fruits with over 7,000 varieties. Comes in a bag of 6',
+		category: 'Fruit',
+		price: 1.99,
+		countInStock: 65,
+		rating: 4.0,
+		numReviews: 12,
+	},
+	{
+		name: 'Bacon',
+		image: '/images/bacon.jpg',
+		description:
+			'A cured pork product that comes either smoked or dry-cured. Pack of 8 rashers',
+		category: 'Meat',
+		price: 3.59,
+		countInStock: 0,
+		rating: 5.0,
+		numReviews: 32,
+	},
+	{
+		name: 'Bananas',
+		image: '/images/bananas.jpg',
+		description:
+			'Bananas are a popular tropical fruit that can be eaten on their own or incorporated into cooking and baking. Comes in a 1kg bunch.',
+		category: 'Fruit',
+		price: 1.59,
+		countInStock: 98,
+		rating: 4.5,
+		numReviews: 46,
+	},
+	{
+		name: 'Beef',
+		image: '/images/beef.jpg',
+		description:
+			'A classic choice of meat for a British Sunday roast. Comes as a roasting joint. Approximate weight of 1.5kg',
+		category: 'Meat',
+		price: 14.95,
+		countInStock: 76,
+		rating: 4.5,
+		numReviews: 38,
+	},
+	{
+		name: 'Blueberries',
+		image: '/images/blueberries.jpg',
+		description:
+			'Antioxidant-rich, brightly coloured blueberries, great healthy addition to porridge or yoghurt. Comes in a 400g punnet.',
+		category: 'Fruit',
+		price: 3.09,
+		countInStock: 46,
+		rating: 5,
+		numReviews: 21,
+	},
+	{
+		name: 'Broccoli',
+		image: '/images/broccoli.jpg',
+		description:
+			'Superfood member of the brassica family. Comes a single head.',
+		category: 'Vegetable',
+		price: 2.25,
+		countInStock: 75,
+		rating: 5,
+		numReviews: 20,
+	},
+	{
+		name: 'Carrots',
+		image: '/images/carrots.jpg',
+		description:
+			'Carrots are versatile bright orange root vegetables. Comes in a 1kg bag.',
+		category: 'Vegetable',
+		price: 1.89,
+		countInStock: 86,
+		rating: 4,
+		numReviews: 95,
+	},
+	{
+		name: 'Chicken',
+		image: '/images/chicken.jpg',
+		description:
+			'Chicken is an extremely versatile type of poultry. Comes as 1 whole large bird. Approximate weight 2kg.',
+		category: 'Meat',
+		price: 8.79,
+		countInStock: 35,
+		rating: 4,
+		numReviews: 48,
+	},
+	{
+		name: 'Chocolate',
+		image: '/images/chocolate.jpg',
+		description:
+			'Dark chocolate can be eaten on its own or used in baking. Comes as a 120g bar.',
+		category: 'Cupboard',
+		price: 1.99,
+		countInStock: 20,
+		rating: 3.5,
+		numReviews: 9,
+	},
+	{
+		name: 'Chorizo',
+		image: '/images/chorizo.jpg',
+		description:
+			'Spiced pork sausage is commonly used in Mexican and Spanish cuisine. Comes in a 80g pack.',
+		category: 'Meat',
+		price: 1.99,
+		countInStock: 68,
+		rating: 4,
+		numReviews: 12,
+	},
+	{
+		name: 'Eggs',
+		image: '/images/eggs.jpg',
+		description:
+			'Protein-packed eggs are a versatile ingredient. Comes in a box of 12.',
+		category: 'Meat',
+		price: 2.39,
+		countInStock: 57,
+		rating: 4,
+		numReviews: 77,
+	},
+	{
+		name: 'Lamb',
+		image: '/images/lamb.jpg',
+		description:
+			'Perfect for a Sunday roast. Comes as butterflied leg. Approximate weight 750g.',
+		category: 'Meat',
+		price: 13.59,
+		countInStock: 43,
+		rating: 5,
+		numReviews: 9,
+	},
+	{
+		name: 'Lemon',
+		image: '/images/lemon.jpg',
+		description:
+			'Lemons are sour, zesty, juicy fruits that are delicious in all sorts of sweet and savoury dishes. Comes in a bag of 4.',
+		category: 'Fruit',
+		price: 2.35,
+		countInStock: 38,
+		rating: 4,
+		numReviews: 97,
+	},
+	{
+		name: 'Oats',
+		image: '/images/oats.jpg',
+		description:
+			'Oats are a grain that are used to make porridge. Comes in a 1kg bag.',
+		category: 'Cupboard',
+		price: 1.45,
+		countInStock: 31,
+		rating: 4,
+		numReviews: 25,
+	},
+	{
+		name: 'Olives',
+		image: '/images/olives.jpg',
+		description:
+			'Olives are the fruit of a tree found across the Mediterranean. Comes in a 300g jar in olive oil.',
+		category: 'Cupboard',
+		price: 3.65,
+		countInStock: 18,
+		rating: 3.5,
+		numReviews: 13,
+	},
+	{
+		name: 'Onions',
+		image: '/images/onions.jpg',
+		description:
+			'Onions are endlessly versatile and an essential ingredient in countless recipes. Comes in a 1kg bag.',
+		category: 'Vegetable',
+		price: 1.15,
+		countInStock: 34,
+		rating: 4,
+		numReviews: 68,
+	},
+	{
+		name: 'Pears',
+		image: '/images/pears.jpg',
+		description:
+			'Juicy, sweet fruit come in many different varieties. Comes in a 1kg bag.',
+		category: 'Fruit',
+		price: 1.65,
+		countInStock: 80,
+		rating: 3.5,
+		numReviews: 54,
+	},
+	{
+		name: 'Peas',
+		image: '/images/peas.jpg',
+		description:
+			'Quickly picked and packed to retain its freshness. Comes in a 500g frozen bag.',
+		category: 'Vegetable',
+		price: 1.89,
+		countInStock: 27,
+		rating: 4.5,
+		numReviews: 94,
+	},
+	{
+		name: 'Pork',
+		image: '/images/pork.jpg',
+		description:
+			'Crackling joint perfect for roasts. Comes as 1.6kg leg joint.',
+		category: 'Meat',
+		price: 8.99,
+		countInStock: 39,
+		rating: 5,
+		numReviews: 85,
+	},
+	{
+		name: 'Potatoes',
+		image: '/images/potatoes.jpg',
+		description:
+			'Potatoes are an extremely popular starchy root vegetable. Comes in a 2kg bag.',
+		category: 'Vegetable',
+		price: 2.69,
+		countInStock: 89,
+		rating: 4.5,
+		numReviews: 52,
+	},
+	{
+		name: 'Spinach',
+		image: '/images/spinach.jpg',
+		description:
+			'Spinach is a super-healthy leafy green vegetable. Comes in a 200g bag.',
+		category: 'Vegetable',
+		price: 1.75,
+		countInStock: 98,
+		rating: 4,
+		numReviews: 55,
+	},
+	{
+		name: 'Tomatoes',
+		image: '/images/tomatoes.jpg',
+		description:
+			'Sweet, tangy tomatoes are delicious in all sorts of savoury dishes. Comes in a 400g punnet.',
+		category: 'Vegetable',
+		price: 1.75,
+		countInStock: 48,
+		rating: 4.5,
+		numReviews: 73,
+	},
+	{
+		name: 'Tuna',
+		image: '/images/tuna.jpg',
+		description:
+			'This oily fish has a meaty texture and a strong flavour. Comes in a pack of 2 steaks. Approximate 250g.',
+		category: 'Meat',
+		price: 7.65,
+		countInStock: 11,
+		rating: 4,
+		numReviews: 79,
+	},
+];
+
+export default products;
