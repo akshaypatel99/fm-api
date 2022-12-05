@@ -2,6 +2,7 @@ import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
+import cors from 'cors';
 import connectDB from './config/db.js';
 import { notFound, errorHandler } from './middleware/error.js';
 
@@ -10,6 +11,12 @@ import authRoutes from './routes/authRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+
+const corsOptions = {
+	origin: 'https://farmers-market-abvn.onrender.com/',
+	credentials: true,
+	optionSuccessStatus: 200,
+};
 
 dotenv.config();
 
@@ -23,6 +30,8 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'development') {
 	app.use(morgan('dev'));
 }
+
+app.use(cors(corsOptions));
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', authRoutes);
