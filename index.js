@@ -1,7 +1,6 @@
 import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
-import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import connectDB from './config/db.js';
 import { notFound, errorHandler } from './middleware/error.js';
@@ -18,8 +17,8 @@ connectDB();
 
 const app = express();
 
-// Middleware
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 if (process.env.NODE_ENV === 'development') {
 	app.use(morgan('dev'));

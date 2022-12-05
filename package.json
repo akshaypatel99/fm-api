@@ -4,6 +4,8 @@
   "description": "Farmers Market server",
   "main": "index.js",
   "scripts": {
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akshay Patel",
