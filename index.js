@@ -13,7 +13,7 @@ import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 
 const corsOptions = {
-	origin: 'https://farmers-market-abvn.onrender.com/',
+	origin: 'https://farmers-market-abvn.onrender.com',
 	credentials: true,
 	optionSuccessStatus: 200,
 };
